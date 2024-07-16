@@ -1,0 +1,10 @@
+p:hover{
+    
+    color:red;
+}
+td:hover{
+    color: blue;
+}
+li:hover{
+    color: pink;
+}
