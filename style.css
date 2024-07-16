@@ -1,6 +1,6 @@
-p{
+p:hover{
     
-    color: pink;
+    color:yellow;
 }
 td:hover{
     color: blue;
