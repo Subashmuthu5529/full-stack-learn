@@ -1,10 +1,102 @@
-p:hover{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(home.webp);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+}
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    margin: 0%;
+}
+nav  ul li a{
+    display: inline;
+    list-style: none;
+    margin:10px 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:pink;
+    font-weight: 400;
+}
+.login-btn{
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: 400;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    background-image: linear-gradient(45deg,#df4881, #c430d7);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    transition: 0.6s;
+}
+.content{
+    margin-top:10%;
+    max-width: 600px;
+    text-decoration: none;
+
+}
+.content h1{
+    text-decoration: none;
+    font-size: 70px;
+    color: #14d5ab;
+}
+.content p{
+    margin: 10px 0 30px;
+    color: aqua;
+    animation-delay: 0.6s;
     
-    color:red;
 }
-td:hover{
-    color: blue;
+.content .btn{
+    padding: 15px 80px;
+    font-size: 15px;
+    animation-delay: 0.6s;
+    position: absolute;
+    bottom: 10;
+    left: 10%;
+
 }
-li:hover{
-    color: pink;
+.btc:hover{
+    border-top-left-radius: 5px;
+}
+.home-woman{
+    width: 300px;
+    position: absolute;
+    bottom:0;
+    right: 10%;
+}
+.home-woman.anim{
+    animation-delay: 1.2s;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.6s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform:translateY(0px);
+    }
 }
